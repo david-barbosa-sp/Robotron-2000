@@ -34,13 +34,17 @@ const equipamentos = {
 const estatisticas = document.querySelectorAll('[data-estatistica]')
 
 const controle = document.querySelectorAll('[data-controle]');
-controle.forEach((elemento)=>{
-    elemento.addEventListener('click', (e)=>{manipulaDados(e.target.dataset.controle, e.target.parentNode)
-    atualizaEstatisitica(e.target.dataset.peca, e.target.dataset.controle)
-    })
+controle.forEach
+(
+    (elemento)=>
+    {
+        elemento.addEventListener('click', (e)=>
+            {
+                manipulaDados(e.target.dataset.controle, e.target.parentNode); 
+                atualizaEstatisitica(e.target.dataset.peca, e.target.dataset.controle)
+            })
    
-}
-
+    }
 )
 
 function manipulaDados(operacao, controle){    
